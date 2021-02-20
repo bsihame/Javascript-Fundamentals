@@ -16,6 +16,9 @@ console.log(num.slice(0,2));//[ 13, 14 ]
 console.log(num.slice(2,2));//[]
 let string = "My dog has fleas";
 console.log(string.split(" ")); // [ 'My', 'dog', 'has', 'fleas' ] // split change the string to array 
-console.log(fruits.join(" "));// apple Banana orange kiwi Cherry
-console.log(typeof(fruits.join(" "))); //join change the array to sting
+console.log(fruits.join(" "));// apple Banana orange kiwi Cherry  //join change the array to sting
+console.log(typeof(fruits.join(" "))); //sting
+fruits.push("milk")
+console.log(fruits.push("milk")); //6===> gives length
+console.log(fruits);//['apple',  'Banana','orange', 'kiwi', 'Cherry', 'milk', 'milk']
 
