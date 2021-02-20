@@ -21,4 +21,12 @@ console.log(typeof(fruits.join(" "))); //sting
 fruits.push("milk")
 console.log(fruits.push("milk")); //6===> gives length
 console.log(fruits);//['apple',  'Banana','orange', 'kiwi', 'Cherry', 'milk', 'milk']
+// push you add element at the end of the array
+fruits.pop();
+// let fruits= ['apple',  'Banana','orange', 'kiwi', 'Cherry', 'milk', 'milk']
+console.log(fruits);//[ 'apple', 'Banana', 'orange', 'kiwi', 'Cherry', 'milk' ] // pop() it remove the last element
+fruits.pop(); 
+console.log(fruits);// [ 'apple', 'Banana', 'orange', 'kiwi', 'Cherry' ]
+console.log(fruits.pop())
+
 
