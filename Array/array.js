@@ -27,6 +27,6 @@ fruits.pop();
 console.log(fruits);//[ 'apple', 'Banana', 'orange', 'kiwi', 'Cherry', 'milk' ] // pop() it remove the last element
 fruits.pop(); 
 console.log(fruits);// [ 'apple', 'Banana', 'orange', 'kiwi', 'Cherry' ]
-console.log(fruits.pop())
+console.log(fruits.pop())// cherry
 
 
