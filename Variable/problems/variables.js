@@ -7,6 +7,21 @@
 //  * For example, if you were born in 1988, then in 2026 you'll be either 37 or 38, depending on what month it is in 2026.
 //  * Log them to the screen like so: "I will be either `ageMin` or `ageMax` in `futureYear`", substituting the values.
 
+const calculateAge =(num1, num2)=> {
+  
+  let maxAge = num2 - num1;
+  // let minAge = maxAge - 1;
+  // return(maxAge)
+  console.log(maxAge)
+  }
+  console.log("Hello")
+  // console.log(num1)
+  // console.log("Minimum age is "+ minAge)
+let  num1 =2008;
+let num2=2020
+console.log(calculateAge(maxAge))
+
+
 // ## Problem Two
 
 // Snack Supply Calculator:
