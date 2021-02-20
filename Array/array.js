@@ -28,5 +28,16 @@ console.log(fruits);//[ 'apple', 'Banana', 'orange', 'kiwi', 'Cherry', 'milk' ] 
 fruits.pop(); 
 console.log(fruits);// [ 'apple', 'Banana', 'orange', 'kiwi', 'Cherry' ]
 console.log(fruits.pop())// cherry
+fruits.unshift("mango");
+console.log(fruits);//[ 'mango', 'apple', 'Banana', 'orange', 'kiwi' ]// add the element at the beginning of the array
+fruits.shift("mango");
+console.log(fruits);//[ 'apple', 'Banana', 'orange', 'kiwi' ]// remove the element at the beginning of the array
+
+// shift is the opposite of pop
+// push unshift add element either in the front or at the end
+//  + unshift              push +
+//   -  shift              pop -
+
+
 
 
