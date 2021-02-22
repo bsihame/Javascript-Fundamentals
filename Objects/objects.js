@@ -114,9 +114,24 @@ let films = [
     released: 1995,
   },
 ];
-films.forEach(film => 
-  console.log(film.name))
+//  this gives each individual film 
+// films.forEach(film => 
+//   console.log(film.name))
 
-for (let i =0; i<films.length; i++){
-  console.log(films[i])
+// for (let i =0; i<films.length; i++){
+//   console.log(films[i])
+// }
+// for (let i =0; i<films.length; i++){
+//   console.log(films[i]["name"])
+// }
+// let sum = 0;
+// for(let i =0; i< films.length; i++) {
+//   sum += films[i].released
+//   console.log("this is sum", sum)
+// }
+
+let sum = 0;
+for (let i=0; i< films.length; i++) {
+  sum += films[i]["released"]
 }
+console.log(Math.floor(sum /films.length))
