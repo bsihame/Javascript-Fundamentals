@@ -82,17 +82,17 @@
 //   console.log("key: ", key, "value: ", person[key])
 // };
 
-let closet = {
-  winter: {
-    hands: "gloves",
-    head: "beenie",
-  },
-  summer: { hands: "rings", head: "baseball cap" }
-};
-console.log(closet.summer['head']);
-console.log(closet.summer.head);
-closet["fall"] = {hands: "pumpkin spice latte", head: "leaves"}
-console.log(closet);
+// let closet = {
+//   winter: {
+//     hands: "gloves",
+//     head: "beenie",
+//   },
+//   summer: { hands: "rings", head: "baseball cap" }
+// };
+// console.log(closet.summer['head']);
+// console.log(closet.summer.head);
+// closet["fall"] = {hands: "pumpkin spice latte", head: "leaves"}
+// console.log(closet);
 
 // object.key // retrieves value 
 // object.key = value // sets key to point to value in object
@@ -114,3 +114,9 @@ let films = [
     released: 1995,
   },
 ];
+films.forEach(film => 
+  console.log(film.name))
+
+for (let i =0; i<films.length; i++){
+  console.log(films[i])
+}
