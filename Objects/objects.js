@@ -91,3 +91,26 @@ let closet = {
 };
 console.log(closet.summer['head']);
 console.log(closet.summer.head);
+closet["fall"] = {hands: "pumpkin spice latte", head: "leaves"}
+console.log(closet);
+
+// object.key // retrieves value 
+// object.key = value // sets key to point to value in object
+
+let films = [
+  {
+    name: "Psycho",
+    director: "Alfred Hitchcock",
+    released: 1960,
+  },
+  {
+    name: "Citizen Kane",
+    director: "Orson Welles",
+    released: 1941,
+  },
+  {
+    name: "The Usual Suspects",
+    director: "Bryan Singer",
+    released: 1995,
+  },
+];
