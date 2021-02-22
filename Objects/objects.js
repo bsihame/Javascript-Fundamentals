@@ -1,3 +1,4 @@
+// Object are aa data structure that store  and value pairs
 // let fruits =["apple", "orange"]
 // console.log(fruits[1]); // orange
 // fruits[1]= "Strawberry";  //assign 1st index to have value of strawberry
@@ -13,7 +14,8 @@
 
 // let fruits = {
 //   0: "apple",
-//   1: "orange"
+//   1: "orange",
+//   2: "pear",
 // };
 // console.log(fruits[1])// orange
 // fruits[1] = "Strawberry";
@@ -37,5 +39,9 @@ console.log(person[variableLastName]);
 
 person["firstName"] = "Flower";
 console.log(person["firstName"]);
+console.log(person);
+
+// obj[key ] => retrieve  value;
+//obj[value]= value set key to value in obj
 
 
