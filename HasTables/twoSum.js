@@ -41,7 +41,7 @@
 // Input: nums = [2,7,11,15], target = 9
 // Output: [0,1]
 // Output: Because nums[0] + nums[1] == 9, we return [0, 1].
-const twoSum = function(arr, target) {
+const twoSum1 = function(arr, target) {
     let output=[];
     for (let i=0; i< arr.length; i++) { //=> 0(n)
     for(let j=i+1; j< arr.length; j++) { //=> 0(n)
@@ -52,7 +52,7 @@ const twoSum = function(arr, target) {
     }
     };
 };
-console.log(twoSum[[2,7,11,15]], 9)
+console.log(twoSum1[[2,7,11,15]], 9)
 
 
 // // Object
@@ -69,6 +69,19 @@ console.log(twoSum[[2,7,11,15]], 9)
 //   };
 //   console.log(tracker)
 // }
+
+const twoSum = (nums, target) => {
+  var output = [], temp = {};
+  for(let i = 0; i < nums.length; i++){
+      if(temp[target - nums[i]] != undefined){
+          output.push(temp[target - nums[i]], i);
+          return output;  
+      }
+      temp[nums[i]] = i;
+  }
+  return output;
+};
 console.log(twoSum([2,7,11,15],9));
 console.log(twoSum([3,2,4],6))
 console.log(twoSum([3,2,3],6));
+console.log(twoSum([3, 5, 2, 4, 3],9));
