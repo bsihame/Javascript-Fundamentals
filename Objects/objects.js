@@ -44,40 +44,50 @@
 // obj[key ] => retrieve  value;
 //obj[value]= value set key to value in obj
 
-let person = {
-  name: "Corey",
-  age: 2,
-  hair: true,
-  size: "large",
-  favoriteData: [],
-  "likes-to-eat": true
+// let person = {
+//   name: "Corey",
+//   age: 2,
+//   hair: true,
+//   size: "large",
+//   favoriteData: [],
+//   "likes-to-eat": true
+// };
+// console.log(person["age"] = person["age"] + 1)
+
+// person["married"] = true;
+// console.log(person);
+// person.hair = false;
+// console.log(person.hair);
+// console.log(person);
+// console.log(person.name);console.log(person["name"]);
+// person.favoriteColor ="blue"
+// console.log(person);
+// // delete key and value
+// delete person["likes-to-eat"]
+// console.log(person);
+// // Iterating through  an object
+
+// for(let key in person){
+//   console.log(key)
+// };
+// for(let key in person){
+//   console.log(person[key])
+// }
+
+// for(let key in person){
+//   console.log(person[person])
+// }
+
+// for(let key in person){
+//   console.log("key: ", key, "value: ", person[key])
+// };
+
+let closet = {
+  winter: {
+    hands: "gloves",
+    head: "beenie",
+  },
+  summer: { hands: "rings", head: "baseball cap" }
 };
-console.log(person["age"] = person["age"] + 1)
-
-person["married"] = true;
-console.log(person);
-person.hair = false;
-console.log(person.hair);
-console.log(person);
-console.log(person.name);console.log(person["name"]);
-person.favoriteColor ="blue"
-console.log(person);
-// delete key and value
-delete person["likes-to-eat"]
-console.log(person);
-// Iterating through  an object
-
-for(let key in person){
-  console.log(key)
-};
-for(let key in person){
-  console.log(person[key])
-}
-
-for(let key in person){
-  console.log(person[person])
-}
-
-for(let key in person){
-  console.log("key: ", key, "value: ", person[key])
-}
+console.log(closet.summer['head']);
+console.log(closet.summer.head);
