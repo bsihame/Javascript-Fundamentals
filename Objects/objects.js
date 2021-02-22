@@ -22,26 +22,42 @@
 // console.log(fruits[1]); // Strawberry
 // console.log(fruits);
 
-let person = {
-  firstName: "Corey",
-  lastName: "Ladovsky",
-  age: 100,
-  weight: 200,
-  42: "Answer of Universe",
-  favoriteAnimal: ["cats", "monkey", "birds"]
-};
+// let person = {
+//   firstName: "Corey",
+//   lastName: "Ladovsky",
+//   age: 100,
+//   weight: 200,
+//   42: "Answer of Universe",
+//   favoriteAnimal: ["cats", "monkey", "birds"]
+// };
 // console.log(person["height"]);//==> undefine : any key doesn't have a value gives back undefined;
 // console.log(person);
 
-let variableLastName = "lastName"
+// let variableLastName = "lastName"
 
-console.log(person[variableLastName]);
+// console.log(person[variableLastName]);
 
-person["firstName"] = "Flower";
-console.log(person["firstName"]);
-console.log(person);
+// person["firstName"] = "Flower";
+// console.log(person["firstName"]);
+// console.log(person);
 
 // obj[key ] => retrieve  value;
 //obj[value]= value set key to value in obj
+
+let person = {
+  name: "Corey",
+  age: 2,
+  hair: true,
+  size: "large",
+  favoriteData: [],
+  "likes-to-eat": true
+};
+console.log(person["age"] = person["age"] + 1)
+
+person["married"] = true;
+console.log(person);
+person.hair = false;
+console.log(person.hair);
+console.log(person);
 
 
