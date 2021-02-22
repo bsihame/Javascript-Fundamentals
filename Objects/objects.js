@@ -36,5 +36,6 @@ let variableLastName = "lastName"
 console.log(person[variableLastName]);
 
 person["firstName"] = "Flower";
-console.log(person["firstName"])
+console.log(person["firstName"]);
+
 
