@@ -59,5 +59,25 @@ console.log(person);
 person.hair = false;
 console.log(person.hair);
 console.log(person);
+console.log(person.name);console.log(person["name"]);
+person.favoriteColor ="blue"
+console.log(person);
+// delete key and value
+delete person["likes-to-eat"]
+console.log(person);
+// Iterating through  an object
 
+for(let key in person){
+  console.log(key)
+};
+for(let key in person){
+  console.log(person[key])
+}
 
+for(let key in person){
+  console.log(person[person])
+}
+
+for(let key in person){
+  console.log("key: ", key, "value: ", person[key])
+}
