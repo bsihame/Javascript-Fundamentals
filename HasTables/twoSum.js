@@ -71,7 +71,8 @@ console.log(twoSum1[[2,7,11,15]], 9)
 // }
 
 const twoSum = (nums, target) => {
-  var output = [], temp = {};
+  let output = []; 
+  let temp = {};
   for(let i = 0; i < nums.length; i++){
       if(temp[target - nums[i]] != undefined){
           output.push(temp[target - nums[i]], i);
@@ -85,3 +86,5 @@ console.log(twoSum([2,7,11,15],9));
 console.log(twoSum([3,2,4],6))
 console.log(twoSum([3,2,3],6));
 console.log(twoSum([3, 5, 2, 4, 3],9));
+
+
