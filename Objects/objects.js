@@ -97,23 +97,23 @@
 // object.key // retrieves value 
 // object.key = value // sets key to point to value in object
 
-let films = [
-  {
-    name: "Psycho",
-    director: "Alfred Hitchcock",
-    released: 1960,
-  },
-  {
-    name: "Citizen Kane",
-    director: "Orson Welles",
-    released: 1941,
-  },
-  {
-    name: "The Usual Suspects",
-    director: "Bryan Singer",
-    released: 1995,
-  },
-];
+// let films = [
+//   {
+//     name: "Psycho",
+//     director: "Alfred Hitchcock",
+//     released: 1960,
+//   },
+//   {
+//     name: "Citizen Kane",
+//     director: "Orson Welles",
+//     released: 1941,
+//   },
+//   {
+//     name: "The Usual Suspects",
+//     director: "Bryan Singer",
+//     released: 1995,
+//   },
+// ];
 //  this gives each individual film 
 // films.forEach(film => 
 //   console.log(film.name))
@@ -130,8 +130,26 @@ let films = [
 //   console.log("this is sum", sum)
 // }
 
-let sum = 0;
-for (let i=0; i< films.length; i++) {
-  sum += films[i]["released"]
-}
-console.log(Math.floor(sum /films.length))
+// let sum = 0;
+// for (let i=0; i< films.length; i++) {
+//   sum += films[i]["released"]
+// }
+// console.log(Math.floor(sum /films.length))
+
+const authors = [
+  ["Mark Twain", 8.9],
+  ["Nathaniel Hawthorne", 5.1],
+  ["John Steinbeck", 2.3],
+  ["C.S. Lewis", 9.9],
+  ["Jon Krakauer", 6.1],
+];
+
+const authorScores = (authors) => {
+  for (let i=0; i<authors.length; i++ ) {
+    authors2 = authors[i]
+  }
+  for (let i=0; i< authors2.length; i++) {
+    console.log(authors2[i])
+  }
+};
+// console.log(authorScores(authors))
