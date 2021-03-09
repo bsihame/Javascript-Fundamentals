@@ -18,28 +18,53 @@
 //  * @return {string[]}
 //  */
 // var commonChars = function(A) {
-  
-  
+
+
 // };
 
-const findCommonCharacters = (A) => {
-  let obj ={};
-  let  counts = A[0]
-  let output = [];
-  for(let i=0; i<counts.length; i++){
-   if(obj[counts[i]]){
-     obj[counts[i]]++
-    }else {
-     obj[counts[i]]= 1
-   }
-  } 
-  for (word in A){
-    if(obj[key]=== word[i]){
-      output.push(obj(word[i]))
+const countCharacters = (str) => {
+  let obj = {};
+  for (let i = 0; i < str.length; i++) {
+    if (obj[str[i]]) {
+      obj[str[i]]++
+    } else {
+      obj[str[i]] = 1
     }
-    return output
   }
+  return obj
+}
+function findCommonCharacters(str1, str2) {
+  let commonLetters = ""
+  let obj1 = countCharacters(str1)
+  let obj2 = countCharacters(str2);
+  for (let key in obj1) {
+    if (obj2[key]) {
+      if (obj1[key] <= obj2[key]) {
+        while (obj1[key] > 0) {
+          commonLetters += key
+          obj1[key]--
+        }
+      } else {
+        while (obj2[key] > 0) {
+          commonLetters += key
+          obj2[key]--
+        }
+      }
+    }
+  }
+  return commonLetters
+}
 
-  // return output
+const commonChars = (A) =>{
+  let chars = findCommonCharacters(A[0], A[0]);
+  for(let i = 1; i< A.length; i++){
+    chars = findCommonCharacters(chars, A[i])
   }
-  console.log(findCommonCharacters(["letter", "thank", "lol"]))
+  return chars.split('')
+  };
+
+// console.log(commonChars(["letter", "thank", "lol"]))
+// console.log(commonChars(["letter", "letter", "letter"]))
+// console.log(commonChars(["letter", "thank", "lol"]))
+// console.log(commonChars(["letter", "label", "lollipep"]))
+console.log(commonChars(["letter"]))
