@@ -5,8 +5,6 @@
 
 // You can return the answer in any order.
 
- 
-
 // Example 1:
 
 // Input: nums = [2,7,11,15], target = 9
@@ -29,22 +27,37 @@
 //   })
 // }
 
-function twoNumberSum(array, targetSum) {
-
-	let output = [];
-  if(!array.length) return output 
-	array.map((num)=> {
-    let difference = targetSum - num;
-    if(difference=== 0){
-      output =output.push(num) 
-      console.log(39, output)
+const twoNumberSum = function (arr, target) {
+  let output = [];
+  for (let i = 0; i < arr.length; i++) {
+    //=> 0(n)
+    for (let j = i + 1; j < arr.length; j++) {
+      //=> 0(n)
+      if (arr[i] + arr[j] === target) {
+        //=> 0(1)
+        output.push(i, j); // => 0(1)
+        return output; // => 0(1)
+      }
     }
-    // return num
-		// if(num)
-	})
-  return output
+  }
+};
+console.log(twoNumberSum[[2, 7, 11, 15]], 9);
+// console.log(twoNumberSum([3, 5, 4, 8, 11, 1, -1, 6], 10))
+// console.log(twoNumberSum([], 10))
 
-}
-console.log(twoNumberSum([3, 5, 4, 8, 11, 1, -1, 6], 10))
-console.log(twoNumberSum([], 10))
-
+// const twoSum = (nums, target) => {
+//   let output = [];
+//   let temp = {};
+//   for(let i = 0; i < nums.length; i++){
+//       if(temp[target - nums[i]] != undefined){
+//           output.push(temp[target - nums[i]], i);
+//           return output;
+//       }
+//       temp[nums[i]] = i;
+//   }
+//   return output;
+// };
+// console.log(twoSum([2,7,11,15],9));
+// console.log(twoSum([3,2,4],6))
+// console.log(twoSum([3,2,3],6));
+// console.log(twoSum([3, 5, 2, 4, 3],9));
