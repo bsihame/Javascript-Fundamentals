@@ -20,6 +20,9 @@ function reverse(str) {
     }
     return reverseStr
 }
-console.log(reverse('apple'))
+console.log(reverse('apple'));
+console.log(reverse('hello'))
+console.log(reverse('Greetings!'))
+
 
 
