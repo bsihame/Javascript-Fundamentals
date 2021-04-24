@@ -6,7 +6,17 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-function reverse(str) {
+
+const reverse = (str) => {
+  let strToArray = str.split("").reverse().join("")
+  return strToArray
+}
+console.log(reverse('apple'));
+console.log(reverse('hello'));
+console.log(reverse('Greetings!'));
+
+
+const reverse2 = (str) => {
     let reverseStr = "";
     let stack = [];
     for(let i = 0; i < str.length; i++){
@@ -20,9 +30,9 @@ function reverse(str) {
     }
     return reverseStr
 }
-console.log(reverse('apple'));
-console.log(reverse('hello'))
-console.log(reverse('Greetings!'))
+console.log(reverse2('apple'));
+console.log(reverse2('hello'))
+console.log(reverse2('Greetings!'))
 
 
 
