@@ -5,7 +5,7 @@
 //   reverse('apple') === 'leppa'
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG';
-
+//=================================
 // 1 Turn the string to an Array
 // 2 Call reverse method on the Array
 // 3 Join back the Array to the string 
@@ -18,9 +18,28 @@ const reverse = (str) => {
 console.log(reverse('apple'));
 console.log(reverse('hello'));
 console.log(reverse('Greetings!'));
+//=========================
 
+// create an empty string called reverseStr
+// loop backward 
+// push the character into reverseStr
 
 const reverse2 = (str) => {
+  let reverseStr = "";
+  for(let i = str.length-1; i >= 0 ; i--){
+    reverseStr+=(str[i])
+  }
+  return reverseStr
+}
+console.log(reverse2('apple'));
+console.log(reverse2('hello'))
+console.log(reverse2('Greetings!'))
+
+//========================
+
+
+
+const reverse3 = (str) => {
     let reverseStr = "";
     let stack = [];
     for(let i = 0; i < str.length; i++){
@@ -34,9 +53,9 @@ const reverse2 = (str) => {
     }
     return reverseStr
 }
-console.log(reverse2('apple'));
-console.log(reverse2('hello'))
-console.log(reverse2('Greetings!'))
+console.log(reverse3('apple'));
+console.log(reverse3('hello'))
+console.log(reverse3('Greetings!'))
 
 
 
