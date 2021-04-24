@@ -22,7 +22,7 @@ console.log(reverse('Greetings!'));
 
 // create an empty string called reverseStr
 // loop backward 
-// push the character into reverseStr
+// concat the character into reverseStr
 
 const reverse2 = (str) => {
   let reverseStr = "";
@@ -37,9 +37,25 @@ console.log(reverse2('Greetings!'))
 
 //========================
 
-
+// create an empty string called reverseStr
+// for each character in the provided string
+//  take a character and add it to start of reverseStr
+// return reverseStr
 
 const reverse3 = (str) => {
+  let reverseStr = "";
+  for(let char of str){
+    reverseStr = char + reverseStr
+  }
+  return reverseStr
+}
+console.log(reverse3('apple'));
+console.log(reverse3('hello'))
+console.log(reverse3('Greetings!'))
+
+//========================
+
+const reverse4 = (str) => {
     let reverseStr = "";
     let stack = [];
     for(let i = 0; i < str.length; i++){
@@ -53,9 +69,9 @@ const reverse3 = (str) => {
     }
     return reverseStr
 }
-console.log(reverse3('apple'));
-console.log(reverse3('hello'))
-console.log(reverse3('Greetings!'))
+console.log(reverse4('apple'));
+console.log(reverse4('hello'))
+console.log(reverse4('Greetings!'))
 
 
 
