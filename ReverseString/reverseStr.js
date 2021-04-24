@@ -4,8 +4,12 @@
 // --- Examples
 //   reverse('apple') === 'leppa'
 //   reverse('hello') === 'olleh'
-//   reverse('Greetings!') === '!sgniteerG'
+//   reverse('Greetings!') === '!sgniteerG';
 
+// 1 Turn the string to an Array
+// 2 Call reverse method on the Array
+// 3 Join back the Array to the string 
+// 4 Return the result
 
 const reverse = (str) => {
   let strToArray = str.split("").reverse().join("")
