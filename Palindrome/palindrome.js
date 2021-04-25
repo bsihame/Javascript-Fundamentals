@@ -9,7 +9,6 @@
 
 const palindrome = (str) =>{
   let reversed = str.split("").reduce((rev, char)=> char+ rev, "");
-  console.log(17,reversed)
   if(str === reversed) {
     return true
   } else {
@@ -30,4 +29,15 @@ const palindrome2 = (str) =>{
 console.log(palindrome2("abba"))
 console.log(palindrome2("abcdefg"))
 
+//====================
+const palindrome3 = (str) =>{
+  return str.split("").every((char, i)=> {
+    return char === str[str.length-i-1]
+    //  or one line code
+    // return str.split("").every((char, i)=> str[str.length-i-1]===char)
+  })
+}
 
+
+console.log(palindrome3("abba"))
+console.log(palindrome3("abcdefg"))
