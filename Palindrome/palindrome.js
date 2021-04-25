@@ -20,4 +20,14 @@ const palindrome = (str) =>{
 
 console.log(palindrome("abba"))
 console.log(palindrome("abcdefg"))
+//====================
+const palindrome2 = (str) =>{
+  let reversed = str.split("").reverse().join("");
+  return str === reversed
+}
+
+
+console.log(palindrome2("abba"))
+console.log(palindrome2("abcdefg"))
+
 
