@@ -72,6 +72,13 @@ const reverse4 = (str) => {
 console.log(reverse4('apple'));
 console.log(reverse4('hello'))
 console.log(reverse4('Greetings!'))
+//===================
+const reverse5 = (str) => {
+  return str.split("").reduce((reversed, character)=> character + reversed, "")
+}
+console.log(reverse5('apple'));
+console.log(reverse5('hello'))
+console.log(reverse5('Greetings!'))
 
 
 
